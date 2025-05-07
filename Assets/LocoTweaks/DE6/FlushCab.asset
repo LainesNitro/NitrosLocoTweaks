@@ -31,9 +31,10 @@ MonoBehaviour:
   CustomBuffer: {fileID: 0}
   CustomBufferMaterial: {fileID: 0}
   CollisionCollider: {fileID: 0}
-  WalkableCollider: {fileID: 6439749953822294745, guid: c9ac665e1de1ea0448588b0993a7a305,
+  WalkableCollider: {fileID: 6265676158814695926, guid: c9ac665e1de1ea0448588b0993a7a305,
     type: 3}
-  ItemsCollider: {fileID: 0}
+  ItemsCollider: {fileID: 6398056776923283236, guid: c188c24d8730de34aa01f8003464cb84,
+    type: 3}
   InteriorPrefab: {fileID: 3048979634104750009, guid: 01f2b165ed67c17448950e47e7afcc81,
     type: 3}
   InteriorPrefabExploded: {fileID: 0}
