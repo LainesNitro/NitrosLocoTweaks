@@ -15,10 +15,13 @@ MonoBehaviour:
   ModId: DE6HighHood
   ModName: DE6 High Hood
   Author: Nitro
-  Version: 1.0.0
+  Version: 1.1.0
   HomePage: 
   Repository: 
   AdditionalRequirements:
   - LocoMeshSplitter
   PackConfigs:
   - {fileID: 11400000, guid: 174b0a28de987d2439ab45bcd2540bab, type: 2}
+  - {fileID: 11400000, guid: dac8c07bc0e0d5b4e980e556f5f6c820, type: 2}
+  - {fileID: 11400000, guid: f382c0dc66ba6784880670ed2b327069, type: 2}
+  - {fileID: 11400000, guid: 9a350f0779015e04e95f0f7e159a40dd, type: 2}
