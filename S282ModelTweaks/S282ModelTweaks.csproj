@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>S282ModelTweaks</AssemblyName>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="package.ps1" />
+	</ItemGroup>
+
+	<!-- Derail Valley -->
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp" />
+		<Reference Include="CarChanger.Common">
+		  <HintPath>..\..\..\..\..\Games\Derail Valley\Mods\DVCarChanger\CarChanger.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="CarChanger.Game">
+		  <HintPath>..\..\..\..\..\Games\Derail Valley\Mods\DVCarChanger\CarChanger.Game.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<!-- Unity -->
+	<ItemGroup>
+		<Reference Include="UnityEngine" />
+		<Reference Include="UnityEngine.CoreModule" />
+	</ItemGroup>
+
+	<!-- Mod Loader -->
+	<ItemGroup>
+		<PackageReference Include="Krafs.Publicizer" Version="2.3.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<Publicize Include="Assembly-CSharp" IncludeCompilerGeneratedMembers="false" />
+		<Publicize Include="CarChanger.Game" IncludeCompilerGeneratedMembers="false" />
+		<PackageReference Include="UnityModManager" Version="0.32.4" />
+	</ItemGroup>
+
+	<!-- Null Checking -->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Nullable" Version="1.3.1" PrivateAssets="all" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<!-- Copy to build folder -->
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="./build/" />
+
+		<!-- Package after Release build -->
+		<Exec Condition="'$(ConfigurationName)' == 'Release' And '$(OS)' == 'Windows_NT'" Command="powershell -executionpolicy bypass -Command &quot;(./package.ps1)&quot;" />
+		<Exec Condition="'$(ConfigurationName)' == 'Release' And '$(OS)' != 'Windows_NT'" Command="pwsh -Command &quot;(./package.ps1)&quot;" />
+	</Target>
+</Project>
