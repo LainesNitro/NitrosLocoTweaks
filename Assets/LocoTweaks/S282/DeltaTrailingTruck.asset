@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 377294946, guid: b6e5ff4f80d0a724dbfb41cb3875a6bf, type: 3}
+  m_Name: DeltaTrailingTruck
+  m_EditorClassIdentifier: 
+  ModificationId: DeltaTrailingTruckAxles
+  ModificationName:
+    Items:
+    - Language: 0
+      Value: Delta Trailing Truck
+  IncompatibleModifications: []
+  ForcePrefabReloadOnApply: 0
+  _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
+    \"Delta Trailing Truck\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 6200854633251127849, guid: a2509baf5cbf1394bbb1e12d9aac4478,
+    type: 3}
+  HideOriginalBody: 0
+  PreventBodyHiding: 0
+  BufferType: 0
+  CustomBuffer: {fileID: 0}
+  CustomBufferMaterial: {fileID: 0}
+  CollisionCollider: {fileID: 0}
+  WalkableCollider: {fileID: 0}
+  ItemsCollider: {fileID: 0}
+  InteriorPrefab: {fileID: 0}
+  InteriorPrefabExploded: {fileID: 0}
+  HideOriginalInterior: 0
+  PreventInteriorHiding: 0
+  InteriorLODPrefab: {fileID: 0}
+  HideOriginalInteriorLOD: 0
+  PreventInteriorLODHiding: 0
+  LeftWindow: {fileID: 0}
+  RightWindow: {fileID: 0}
+  LeftWindowExploded: {fileID: 0}
+  RightWindowExploded: {fileID: 0}
+  HideOriginalWindows: 0
+  ToolboxLid: {fileID: 0}
+  ToolboxLidExploded: {fileID: 0}
+  HideOriginalToolboxLid: 0
+  UseCustomHeadlights: 0
+  Mesh: {fileID: 0}
+  BeamPosition: {x: -0.00146591, y: 3.579122, z: 10.98136}
+  _resetHeadlight: 0
+  BlockedRegions: 0
