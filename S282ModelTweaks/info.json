@@ -1,0 +1,9 @@
+{
+	"Id": "S282ModelTweaks",
+	"Version": "1.0.0",
+	"DisplayName": "S282 Model Tweaks",
+	"Author": "Nitro",
+	"EntryMethod": "S282ModelTweaks.Main.Load",
+	"ManagerVersion": "0.27.3",
+	"Repository": "https://raw.githubusercontent.com/OWNER/REPOSITORY/main/repository.json"
+}
