@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<ReferencePath>
+			C:\Games\Derail Valley\DerailValley_Data\Managed\;
+		</ReferencePath>
+		<AssemblySearchPaths>$(AssemblySearchPaths);$(ReferencePath);</AssemblySearchPaths>
+	</PropertyGroup>
+</Project>

@@ -1,6 +1,6 @@
 {
 	"Id": "S282ModelTweaks",
-	"Version": "1.0.0",
+	"Version": "1.1.0",
 	"DisplayName": "S282 Model Tweaks",
 	"Author": "Nitro",
 	"EntryMethod": "S282ModelTweaks.Main.Load",

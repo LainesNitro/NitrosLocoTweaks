@@ -19,6 +19,12 @@
 		<Reference Include="CarChanger.Game">
 		  <HintPath>..\..\..\..\..\Games\Derail Valley\Mods\DVCarChanger\CarChanger.Game.dll</HintPath>
 		</Reference>
+		<Reference Include="DV.Simulation">
+		  <HintPath>..\..\..\..\..\Games\Derail Valley\DerailValley_Data\Managed\DV.Simulation.dll</HintPath>
+		</Reference>
+		<Reference Include="DV.ThingTypes">
+		  <HintPath>..\..\..\..\..\Games\Derail Valley\DerailValley_Data\Managed\DV.ThingTypes.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 
 	<!-- Unity -->

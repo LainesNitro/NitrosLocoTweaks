@@ -15,7 +15,7 @@ public static class Main
 {
     public static UnityModManager.ModEntry Instance { get; private set; } = null!;
 
-    internal static Dictionary<AppliedChange, AxleChanger> axleDictionary = [];
+    internal static Dictionary<AppliedChange, S282ABogieChanger> bogieDictionary = [];
     internal static Dictionary<AppliedChange, DrivetrainChanger> drivetrainDictionary = [];
 
 
@@ -49,25 +49,27 @@ public static class PatchAppliedChange
     {
         if (config.ModificationId.Contains("Axles"))
         {
-            if (Main.axleDictionary.TryGetValue(__instance, out var axleChanger))
+            if (Main.bogieDictionary.TryGetValue(__instance, out var bogieChanger))
             {
-                axleChanger.Reset();
-                Main.axleDictionary.Remove(__instance);
+                bogieChanger.Reset();
+                Main.bogieDictionary.Remove(__instance);
             }
 
-            var axleRoot = config.BodyPrefab?.transform.Find("Axles");
-
-            if (axleRoot == null)
+            var axleF = config.BodyPrefab?.transform.Find("Axle_F/bogie_car")?.gameObject;
+            var axleR = config.BodyPrefab?.transform.Find("Axle_R/bogie_car")?.gameObject;
+            
+            if (axleF == null && axleR == null)
             {
-                Main.Instance.Logger.Error("Unable to find axle root prefab!");
+                Main.Instance.Logger.Error("Unable to find axles prefab!");
                 return;
             }
 
-            axleChanger = new(__instance.MatHolder, axleRoot.gameObject);
+            bogieChanger = new(__instance.MatHolder, axleF, axleR);
 
-            Main.axleDictionary.Add(__instance, axleChanger);
+            Main.bogieDictionary.Add(__instance, bogieChanger);
 
-            __instance._body.transform.Find("Axles").gameObject.SetActive(false);
+            __instance._body.transform.Find("Axle_F")?.gameObject.SetActive(false);
+            __instance._body.transform.Find("Axle_R")?.gameObject.SetActive(false);
         }
 
         if (config.ModificationId.Contains("Drivetrain"))
@@ -101,10 +103,10 @@ public static class PatchAppliedChange
         {
             if (__instance.Config.ModificationId.Contains("Axles"))
             {
-                if (Main.axleDictionary.TryGetValue(__instance, out var axleChanger))
+                if (Main.bogieDictionary.TryGetValue(__instance, out var bogieChanger))
                 {
-                    axleChanger.Reset();
-                    Main.axleDictionary.Remove(__instance);
+                    bogieChanger.Reset();
+                    Main.bogieDictionary.Remove(__instance);
                 }
             }
             if (__instance.Config.ModificationId.Contains("Drivetrain"))
