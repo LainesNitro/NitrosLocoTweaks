@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 377294946, guid: b6e5ff4f80d0a724dbfb41cb3875a6bf, type: 3}
-  m_Name: DeltaTrailingTruck
+  m_Name: S060Wheelset
   m_EditorClassIdentifier: 
-  ModificationId: DeltaTrailingTruckAxles
+  ModificationId: S060WheelsetDrivetrain
   ModificationName:
     Items:
     - Language: 0
-      Value: Delta Trailing Truck
+      Value: S060 Wheelset
   IncompatibleModifications: []
   ForcePrefabReloadOnApply: 0
   _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
-    \"Delta Trailing Truck\"\r\n    }\r\n  ]\r\n}"
-  BodyPrefab: {fileID: 7083506705870179977, guid: a2509baf5cbf1394bbb1e12d9aac4478,
+    \"S060 Wheelset\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 1876428094007476116, guid: eb2eecbee714e1f4c977cae0dd28dfec,
     type: 3}
   HideOriginalBody: 0
   PreventBodyHiding: 0
