@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1029736549, guid: b6e5ff4f80d0a724dbfb41cb3875a6bf, type: 3}
-  m_Name: FrontHandrails
+  m_Name: BUnit
   m_EditorClassIdentifier: 
-  ModificationId: FrontHandrails
+  ModificationId: BUnit
   ModificationName:
     Items:
     - Language: 0
-      Value: Front Handrails
-  IncompatibleModifications: []
+      Value: B-unit
+  IncompatibleModifications:
+  - FlushCab
+  - HighShortHood
   ForcePrefabReloadOnApply: 0
   _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
-    \"Front Handrails\"\r\n    }\r\n  ]\r\n}"
-  BodyPrefab: {fileID: 6297767178200269641, guid: c7229ed0cbec0db47879b8055819d520,
+    \"B-unit\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 6864058508695160171, guid: 4cb98d30e54dd084a972c974931fb4bc,
     type: 3}
   HideOriginalBody: 0
   PreventBodyHiding: 0
@@ -36,7 +38,7 @@ MonoBehaviour:
   HideOriginalInterior: 0
   PreventInteriorHiding: 0
   InteriorLODPrefab: {fileID: 0}
-  HideOriginalInteriorLOD: 0
+  HideOriginalInteriorLOD: 1
   PreventInteriorLODHiding: 0
   UseCustomBogies: 0
   WheelRadius: 0.5335
@@ -53,7 +55,7 @@ MonoBehaviour:
   CabDoorFrontExploded: {fileID: 0}
   CabDoorRearExploded: {fileID: 0}
   HideOriginalCabDoors: 0
-  UseCustomFrontHeadlights: 0
+  UseCustomFrontHeadlights: 1
   FrontSettings:
     WhiteMesh: {fileID: -8395606374869420959, guid: 078ef156fc570b144b8b9ebe009228c4,
       type: 3}

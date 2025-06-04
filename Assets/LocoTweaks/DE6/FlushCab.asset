@@ -16,14 +16,13 @@ MonoBehaviour:
   ModificationName:
     Items:
     - Language: 0
-      Value: Flush Cab
+      Value: High Hood (Flush Cab)
   IncompatibleModifications:
   - HighShortHood
-  - StraightLongHood
   ForcePrefabReloadOnApply: 0
   _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
-    \"Flush Cab\"\r\n    }\r\n  ]\r\n}"
-  BodyPrefab: {fileID: 8037898794184996631, guid: e440ece8f2ae7f648865cd977700cf9c,
+    \"High Hood (Flush Cab)\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 2362757860923092386, guid: e440ece8f2ae7f648865cd977700cf9c,
     type: 3}
   HideOriginalBody: 0
   PreventBodyHiding: 0
@@ -83,7 +82,7 @@ MonoBehaviour:
     RightGlarePosition: {x: -0.6184, y: 2.0064, z: -8.27}
     RedGlarePosition: {x: 0, y: 3.121, z: -8.32}
   _resetRearButton: 0
-  BlockedRegions: 134217731
+  BlockedRegions: 0
   _frontHeadlights: "{\r\n  \"HighBeamPosition\": {\r\n    \"x\": 0.0,\r\n    \"y\":
     3.6,\r\n    \"z\": 8.925,\r\n    \"normalized\": {\r\n      \"x\": 0.0,\r\n     
     \"y\": 0.374076456,\r\n      \"z\": 0.9273979,\r\n      \"magnitude\": 1.0,\r\n     

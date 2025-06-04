@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1029736549, guid: b6e5ff4f80d0a724dbfb41cb3875a6bf, type: 3}
-  m_Name: FrontHandrails
+  m_Name: TwinHornFlush
   m_EditorClassIdentifier: 
-  ModificationId: FrontHandrails
+  ModificationId: TwinHornFlush
   ModificationName:
     Items:
     - Language: 0
-      Value: Front Handrails
-  IncompatibleModifications: []
+      Value: Twin Horn (Flush Cab)
+  IncompatibleModifications:
+  - SideHorn
+  - TwinHornStock
+  - HighShortHood
   ForcePrefabReloadOnApply: 0
   _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
-    \"Front Handrails\"\r\n    }\r\n  ]\r\n}"
-  BodyPrefab: {fileID: 6297767178200269641, guid: c7229ed0cbec0db47879b8055819d520,
+    \"Twin Horn (Flush Cab)\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 8735284282380697104, guid: 99c6348465978174591e975e5fd13c66,
     type: 3}
   HideOriginalBody: 0
   PreventBodyHiding: 0
@@ -55,16 +58,14 @@ MonoBehaviour:
   HideOriginalCabDoors: 0
   UseCustomFrontHeadlights: 0
   FrontSettings:
-    WhiteMesh: {fileID: -8395606374869420959, guid: 078ef156fc570b144b8b9ebe009228c4,
-      type: 3}
-    RedMesh: {fileID: 3932470546520800111, guid: 078ef156fc570b144b8b9ebe009228c4,
-      type: 3}
+    WhiteMesh: {fileID: 0}
+    RedMesh: {fileID: 0}
     HighBeamPosition: {x: 0, y: 3.6, z: 8.925}
     LowBeamPosition: {x: 0, y: 1.99, z: 8.925}
-    TopGlarePosition: {x: 0, y: 3.449, z: 8.42}
+    TopGlarePosition: {x: 0, y: 3.759, z: 7.222}
     LeftGlarePosition: {x: -0.6184, y: 2.0064, z: 8.41}
     RightGlarePosition: {x: 0.6184, y: 2.0064, z: 8.41}
-    RedGlarePosition: {x: 0, y: 3.121, z: 8.42}
+    RedGlarePosition: {x: 0, y: 2.833, z: 8.529}
   _resetFrontButton: 0
   UseCustomRearHeadlights: 0
   RearSettings:
@@ -90,27 +91,25 @@ MonoBehaviour:
     1.0\r\n      },\r\n      \"magnitude\": 0.99999994,\r\n      \"sqrMagnitude\":
     0.9999999\r\n    },\r\n    \"magnitude\": 9.144164,\r\n    \"sqrMagnitude\":
     83.61573\r\n  },\r\n  \"TopGlarePosition\": {\r\n    \"x\": 0.0,\r\n    \"y\":
-    3.449,\r\n    \"z\": 8.42,\r\n    \"normalized\": {\r\n      \"x\": 0.0,\r\n     
-    \"y\": 0.379052162,\r\n      \"z\": 0.9253753,\r\n      \"magnitude\": 1.0,\r\n     
-    \"sqrMagnitude\": 0.99999994\r\n    },\r\n    \"magnitude\": 9.099011,\r\n   
-    \"sqrMagnitude\": 82.792\r\n  },\r\n  \"LeftGlarePosition\": {\r\n    \"x\":
-    -0.6184,\r\n    \"y\": 2.0064,\r\n    \"z\": 8.41,\r\n    \"normalized\": {\r\n     
-    \"x\": -0.07134195,\r\n      \"y\": 0.23146911,\r\n      \"z\": 0.970222831,\r\n     
-    \"magnitude\": 1.0,\r\n      \"sqrMagnitude\": 0.99999994\r\n    },\r\n    \"magnitude\":
-    8.668112,\r\n    \"sqrMagnitude\": 75.1361542\r\n  },\r\n  \"RightGlarePosition\":
-    {\r\n    \"x\": 0.6184,\r\n    \"y\": 2.0064,\r\n    \"z\": 8.41,\r\n    \"normalized\":
-    {\r\n      \"x\": 0.07134195,\r\n      \"y\": 0.23146911,\r\n      \"z\": 0.970222831,\r\n     
+    3.759,\r\n    \"z\": 7.222,\r\n    \"normalized\": {\r\n      \"x\": 0.0,\r\n     
+    \"y\": 0.4616969,\r\n      \"z\": 0.887037754,\r\n      \"magnitude\": 1.0,\r\n     
+    \"sqrMagnitude\": 1.0\r\n    },\r\n    \"magnitude\": 8.14170551,\r\n    \"sqrMagnitude\":
+    66.28737\r\n  },\r\n  \"LeftGlarePosition\": {\r\n    \"x\": -0.6184,\r\n   
+    \"y\": 2.0064,\r\n    \"z\": 8.41,\r\n    \"normalized\": {\r\n      \"x\": -0.07134195,\r\n     
+    \"y\": 0.23146911,\r\n      \"z\": 0.970222831,\r\n      \"magnitude\": 1.0,\r\n     
+    \"sqrMagnitude\": 0.99999994\r\n    },\r\n    \"magnitude\": 8.668112,\r\n   
+    \"sqrMagnitude\": 75.1361542\r\n  },\r\n  \"RightGlarePosition\": {\r\n    \"x\":
+    0.6184,\r\n    \"y\": 2.0064,\r\n    \"z\": 8.41,\r\n    \"normalized\": {\r\n     
+    \"x\": 0.07134195,\r\n      \"y\": 0.23146911,\r\n      \"z\": 0.970222831,\r\n     
     \"magnitude\": 1.0,\r\n      \"sqrMagnitude\": 0.99999994\r\n    },\r\n    \"magnitude\":
     8.668112,\r\n    \"sqrMagnitude\": 75.1361542\r\n  },\r\n  \"RedGlarePosition\":
-    {\r\n    \"x\": 0.0,\r\n    \"y\": 3.121,\r\n    \"z\": 8.42,\r\n    \"normalized\":
-    {\r\n      \"x\": 0.0,\r\n      \"y\": 0.347557366,\r\n      \"z\": 0.9376588,\r\n     
-    \"normalized\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.347557336,\r\n       
-    \"z\": 0.937658668,\r\n        \"normalized\": {\r\n          \"x\": 0.0,\r\n         
-    \"y\": 0.347557366,\r\n          \"z\": 0.9376587,\r\n          \"magnitude\":
-    1.0,\r\n          \"sqrMagnitude\": 1.0\r\n        },\r\n        \"magnitude\":
-    0.99999994,\r\n        \"sqrMagnitude\": 0.9999999\r\n      },\r\n      \"magnitude\":
-    1.00000012,\r\n      \"sqrMagnitude\": 1.00000012\r\n    },\r\n    \"magnitude\":
-    8.979813,\r\n    \"sqrMagnitude\": 80.63704\r\n  }\r\n}"
+    {\r\n    \"x\": 0.0,\r\n    \"y\": 2.833,\r\n    \"z\": 8.529,\r\n    \"normalized\":
+    {\r\n      \"x\": 0.0,\r\n      \"y\": 0.315226138,\r\n      \"z\": 0.9490165,\r\n     
+    \"normalized\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.315226167,\r\n       
+    \"z\": 0.9490166,\r\n        \"magnitude\": 1.0,\r\n        \"sqrMagnitude\":
+    1.0\r\n      },\r\n      \"magnitude\": 0.99999994,\r\n      \"sqrMagnitude\":
+    0.9999999\r\n    },\r\n    \"magnitude\": 8.987199,\r\n    \"sqrMagnitude\":
+    80.76974\r\n  }\r\n}"
   _rearHeadlights: "{\r\n  \"HighBeamPosition\": {\r\n    \"x\": 0.0,\r\n    \"y\":
     3.6,\r\n    \"z\": -8.914,\r\n    \"normalized\": {\r\n      \"x\": 0.0,\r\n     
     \"y\": 0.374473363,\r\n      \"z\": -0.92723763,\r\n      \"normalized\": {\r\n       
@@ -146,7 +145,7 @@ MonoBehaviour:
     \"magnitude\": 1.0,\r\n        \"sqrMagnitude\": 1.0\r\n      },\r\n      \"magnitude\":
     0.99999994,\r\n      \"sqrMagnitude\": 0.9999999\r\n    },\r\n    \"magnitude\":
     8.886115,\r\n    \"sqrMagnitude\": 78.9630356\r\n  }\r\n}"
-  _fw: {fileID: -8395606374869420959, guid: 078ef156fc570b144b8b9ebe009228c4, type: 3}
-  _fr: {fileID: 3932470546520800111, guid: 078ef156fc570b144b8b9ebe009228c4, type: 3}
+  _fw: {fileID: 0}
+  _fr: {fileID: 0}
   _rw: {fileID: 0}
   _rr: {fileID: 0}

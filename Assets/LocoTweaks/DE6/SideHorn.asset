@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1029736549, guid: b6e5ff4f80d0a724dbfb41cb3875a6bf, type: 3}
-  m_Name: FrontHandrails
+  m_Name: SideHorn
   m_EditorClassIdentifier: 
-  ModificationId: FrontHandrails
+  ModificationId: SideHorn
   ModificationName:
     Items:
     - Language: 0
-      Value: Front Handrails
-  IncompatibleModifications: []
+      Value: Side Horn
+  IncompatibleModifications:
+  - TwinHornStock
+  - TwinHornFlush
   ForcePrefabReloadOnApply: 0
   _jsonName: "{\r\n  \"Items\": [\r\n    {\r\n      \"Language\": 0,\r\n      \"Value\":
-    \"Front Handrails\"\r\n    }\r\n  ]\r\n}"
-  BodyPrefab: {fileID: 6297767178200269641, guid: c7229ed0cbec0db47879b8055819d520,
+    \"Side Horn\"\r\n    }\r\n  ]\r\n}"
+  BodyPrefab: {fileID: 8592015428360567815, guid: 8ea1a6f34a2f26949a7c5498c9fb2daf,
     type: 3}
   HideOriginalBody: 0
   PreventBodyHiding: 0
